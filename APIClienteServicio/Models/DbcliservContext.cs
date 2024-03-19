@@ -27,7 +27,7 @@ public partial class DbcliservContext : DbContext
     {
         modelBuilder.Entity<Cliente>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Cliente__3213E83F3672583F");
+            entity.HasKey(e => e.Id).HasName("PK__Cliente__3213E83F644C953D");
 
             entity.ToTable("Cliente");
 
@@ -47,29 +47,33 @@ public partial class DbcliservContext : DbContext
 
         modelBuilder.Entity<ClienteServicio>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__ClienteS__3213E83FA959C017");
+            entity.HasKey(e => new { e.IdCliente, e.IdServicio }).HasName("PK__ClienteS__04BFCFFFE17CD079");
 
             entity.ToTable("ClienteServicio");
 
-            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.IdCliente).HasColumnName("idCliente");
+            entity.Property(e => e.IdServicio).HasColumnName("idServicio");
             entity.Property(e => e.Estado)
                 .HasDefaultValue(true)
                 .HasColumnName("estado");
-            entity.Property(e => e.IdCliente).HasColumnName("idCliente");
-            entity.Property(e => e.IdServicio).HasColumnName("idServicio");
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("id");
 
             entity.HasOne(d => d.IdClienteNavigation).WithMany(p => p.ClienteServicios)
                 .HasForeignKey(d => d.IdCliente)
-                .HasConstraintName("FK__ClienteSe__idCli__47DBAE45");
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__ClienteSe__idCli__0D7A0286");
 
             entity.HasOne(d => d.IdServicioNavigation).WithMany(p => p.ClienteServicios)
                 .HasForeignKey(d => d.IdServicio)
-                .HasConstraintName("FK__ClienteSe__idSer__48CFD27E");
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__ClienteSe__idSer__0E6E26BF");
         });
 
         modelBuilder.Entity<Servicio>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Servicio__3213E83FBE02854E");
+            entity.HasKey(e => e.Id).HasName("PK__Servicio__3213E83FEC9C935D");
 
             entity.ToTable("Servicio");
 

@@ -7,21 +7,21 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9N2aNUXftU2Wi1avBdm+uQAAAAACAAAAAAAQZgAAAAEAACAAAAC2jbdMLd4dnu8lcxrv5kKLBL7TLMCAoGfgA2tpwA2N5AAAAAAOgAAAAAIAACAAAADatWatoBFKb5J0ccjkE3ZDQq8DzQvYfNvSNX1RQjr+6SAAAABQZn6F7RsN4CMFUX2xyGZqWn1MlITDOKgz247li+v2BkAAAABx/09Fh+EqGJ1HW1DU/2NMF+z7WJaR3RubiCYxjfNVTxDOvBt4XwBaidhjP7IL6A6Mc3rjbqVCtjJq8tn3z49e</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.34/www.apiclienteservicio.somee.com</_PublishTargetUrl>
-    <History>True|2024-03-18T10:24:51.7136917Z;</History>
+    <History>True|2024-03-19T11:29:16.8921204Z;True|2024-03-19T04:18:15.1505508-05:00;True|2024-03-18T05:24:51.7136917-05:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="APIClienteServicio.deps.json">
-      <publishTime>03/18/2024 05:23:12</publishTime>
+      <publishTime>03/19/2024 06:27:04</publishTime>
     </File>
     <File Include="APIClienteServicio.dll">
-      <publishTime>03/18/2024 05:23:03</publishTime>
+      <publishTime>03/19/2024 06:27:03</publishTime>
     </File>
     <File Include="APIClienteServicio.exe">
-      <publishTime>03/18/2024 05:23:03</publishTime>
+      <publishTime>03/19/2024 06:27:03</publishTime>
     </File>
     <File Include="APIClienteServicio.pdb">
-      <publishTime>03/18/2024 05:23:03</publishTime>
+      <publishTime>03/19/2024 06:27:03</publishTime>
     </File>
     <File Include="APIClienteServicio.runtimeconfig.json">
       <publishTime>03/18/2024 05:23:04</publishTime>
@@ -30,7 +30,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/13/2024 02:32:25</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>03/18/2024 05:12:01</publishTime>
+      <publishTime>03/19/2024 04:12:18</publishTime>
     </File>
     <File Include="Azure.Core.dll">
       <publishTime>09/07/2023 12:50:30</publishTime>
@@ -159,7 +159,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/22/2021 18:49:44</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>03/18/2024 05:23:13</publishTime>
+      <publishTime>03/19/2024 06:27:04</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -10,11 +10,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 builder.Services.AddDbContext<DbcliservContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("ConectionSQL"));
 });
-
 
 builder.Services.AddCors(options =>
 {
